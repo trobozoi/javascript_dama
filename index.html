@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damas Brasileiras</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>🎯 Damas Brasileiras</h1>
+        </header>
+
+        <div id="game-container">
+            <div id="info-panel">
+                <div id="turn-indicator">
+                    <span id="turn-text">Sua vez (Pretas)</span>
+                </div>
+
+                <div id="score-panel">
+                    <div class="score-item">
+                        <span class="score-label">Jogador</span>
+                        <span id="player-pieces" class="score-value">12</span>
+                    </div>
+                    <div class="score-item">
+                        <span class="score-label">IA</span>
+                        <span id="ai-pieces" class="score-value">12</span>
+                    </div>
+                </div>
+
+                <div id="difficulty-selector">
+                    <label for="difficulty">Dificuldade:</label>
+                    <select id="difficulty">
+                        <option value="easy">Fácil (Prof. 4)</option>
+                        <option value="medium">Médio (Prof. 6)</option>
+                        <option value="hard">Difícil (Prof. 8)</option>
+                        <option value="expert">Expert (Prof. 10)</option>
+                        <option value="master" selected>Mestre (Prof. 12)</option>
+                        <option value="master2">Mestre (Prof. 14)</option>
+                        <option value="master3">Mestre (Prof. 16)</option>
+                        <option value="master4">Mestre (Prof. 18)</option>
+                        <option value="master5">Mestre (Prof. 20)</option>
+                        <option value="master6">Mestre (Prof. 22)</option>
+                        <option value="master7">Mestre (Prof. 24)</option>
+                        <option value="master8">Mestre (Prof. 26)</option>
+                        <option value="master9">Mestre (Prof. 28)</option>
+                        <option value="master0">Mestre (Prof. 30)</option>
+                    </select>
+                </div>
+
+                <div id="start-selector">
+                    <label for="who-starts">Quem começa?</label>
+                    <select id="who-starts">
+                        <option value="player" selected>Eu começo</option>
+                        <option value="ai">IA começa</option>
+                    </select>
+                </div>
+
+                <div id="controls">
+                    <button id="btn-undo" title="Desfazer jogada">⏪ Desfazer</button>
+                    <button id="btn-restart" title="Reiniciar jogo">🔄 Reiniciar</button>
+                    <button id="btn-flip" title="Girar tabuleiro">🔃 Girar Tabuleiro</button>
+                </div>
+
+                <div id="status-message"></div>
+            </div>
+
+            <div id="board-wrapper">
+                <div id="board"></div>
+                <div id="ai-thinking" class="hidden">
+                    <div class="spinner"></div>
+                    <span>IA pensando...</span>
+                </div>
+            </div>
+
+            <div id="move-log-panel">
+                <h3>📋 Log de Jogadas</h3>
+                <div id="move-log"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/game-logic.js"></script>
+    <script src="js/ai-engine.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
