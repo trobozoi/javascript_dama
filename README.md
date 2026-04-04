@@ -1,6 +1,6 @@
 # 🎯 Damas Brasileiras
 
-🌐 **Jogue online:** [[https://trobozoi.github.io/javascript_xadrez/](https://trobozoi.github.io/javascript_dama/)
+🌐 **Jogue online:** [https://trobozoi.github.io/javascript_xadrez/](https://trobozoi.github.io/javascript_dama/)
 
 Jogo de **Damas Brasileiras** completo com inteligência artificial extremamente forte, desenvolvido em **JavaScript puro** (vanilla JS) com HTML e CSS. Nenhuma dependência externa — basta abrir o `index.html` no navegador.
 
